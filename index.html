@@ -8,6 +8,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -17,12 +18,16 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col">
-                    <h3>START BOOTSTRAP</h3>
+                    <h4 class="text-nowrap">START BOOTSTRAP</h3>
                 </div>
                 <nav class="col text-end">
-                    <a href="#">Lorem</a>
-                    <a href="#">Lorem</a>
-                    <a href="#">Lorem</a>
+                    <ul class="d-none d-sm-block align-text-bottom">
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                    </ul>
+                    <button class="btn fg-btn-header d-sm-none fs-3"><i class="bi bi-list"></i></button>
+
                 </nav>
             </div>
         </div>
@@ -30,18 +35,22 @@
 
 
     <main>
-        <section class="my-hero">
-            <div class="row justify-content-center pt-4">
+        <section class="my-hero pb-5">
+            <div class="row justify-content-center pt-5">
 
-                <div class="col-12 col-md-6 text-center">
+                <div class="col-12 col-md-6 col-lg-4 text-center">
                     <div class="row">
-                        <div class="col-6 mx-auto">
+                        <div class="col-8 col-sm-6 mx-auto">
                             <img class="hero-image center " src="./img/avatar.svg" alt="">
                         </div>
                     </div>
-                    <h1 class="display-2">Start Bootstrap</h1>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, con</p>
+                    <h1 class=" text-center text pt-2"><strong>START BOOTSTRAP</strong></h1>
+
+                    <div class="fg-divider">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+
+                    <p>GRAPHIC ARTIST &SmallCircle; WEB DESIGNER  &SmallCircle; ILLUSTRATOR</p>
                 </div>
 
             </div>
@@ -51,7 +60,9 @@
             <div class="row">
                 <div class="col text-center pt-4 pb-4">
                     <h2>PORTFOLIO</h2>
-                    <hr class="mt-5 mb-4">
+                    <div class="fg-divider">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
                 </div>
 
             </div>
@@ -90,7 +101,9 @@
                 <div class="row">
                     <div class="col text-center pt-4 pb-4">
                         <h2>ABOUT</h2>
-                        <hr>
+                        <div class="fg-divider">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="row w-75 mx-auto">
@@ -131,7 +144,9 @@
                 <div class="row">
                     <div class="col text-center pt-4 pb-4">
                         <h2>CONTACT ME</h2>
-                        <hr>
+                        <div class="fg-divider">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -172,13 +187,13 @@
         <div class="fg-upperFoot">
             <div class="container">
                 <div class="row justify-content-evenly text-center">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-3">
                         LOCATION
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 d-none d-sm-block">
                         AROUND
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 d-none d-sm-block text-nowrap">
                         ABOUT FREELANCER
                     </div>
                 </div>

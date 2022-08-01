@@ -1,48 +1,82 @@
-
-:root { 
-    --ms-bg-color-secondary: #2c3e50;
-    --ms-bg-color-primary: #1abc9c;
-    --ms-bg-color-tertiary: #3a546d;
-    --ms-text-color-primary: white;
-    --ms-text-color-secondary: #2b2b2b;
+:root {
+  --ms-bg-color-secondary: #2c3e50;
+  --ms-bg-color-primary: #1abc9c;
+  --ms-bg-color-tertiary: #3a546d;
+  --ms-text-color-primary: white;
+  --ms-text-color-secondary: #2b2b2b;
 }
 
-
-header {
-    background-color: var(--ms-bg-color-secondary);
-    color: var(--ms-text-color-primary);
-    padding: 1rem;
+ul {
+  list-style: none;
 }
 
-header h1 {
-    font-weight: bold;
-}
-
-a { 
-    color: var(--ms-text-color-primary);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-
-}
-nav > a {
-    padding: 0.5rem;
+li {
+  display: inline-block;
+  margin: 0 0.2rem;
 }
 
 section:nth-child(odd) {
-    background-color: var(--ms-bg-color-primary);
-    color: var(--ms-text-color-primary)
+  background-color: var(--ms-bg-color-primary);
+  color: var(--ms-text-color-primary);
 }
 
+section:nth-child(even) .fg-divider:before,
+section:nth-child(even) .fg-divider:after {
+  background-color: var(--ms-text-color-secondary);
+}
+
+/*#region Utilities*****/
+.fg-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.fg-divider:before,
+.fg-divider:after {
+  content: "";
+  background-color: var(--ms-text-color-primary);
+  width: 30%;
+  height: 2px;
+  margin: 0 1rem;
+}
+/*#endregion Utilities*****/
+
+/*#region Header*****/
+header {
+  background-color: var(--ms-bg-color-secondary);
+  color: var(--ms-text-color-primary);
+  padding: 1rem;
+}
+
+header h1 {
+  font-weight: bold;
+}
+
+a {
+  color: var(--ms-text-color-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav > a {
+  padding: 0.5rem;
+}
+
+.fg-btn-header {
+  color: var(--ms-text-color-primary);
+  border: 1px solid white;
+}
+/*#endregion Header*****/
 
 /*#region FOOTER*****/
 footer {
-    background-color: var(--ms-bg-color-secondary);
-    color: white;
+  background-color: var(--ms-bg-color-secondary);
+  color: white;
 }
 
 .fg-upperFoot {
-    background-color: var(--ms-bg-color-tertiary);
+  background-color: var(--ms-bg-color-tertiary);
 }
 
 /*#endregion FOOTER*****/
