@@ -8,6 +8,12 @@
 
 ul {
   list-style: none;
+  padding-inline-start: 0;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 1px solid var(--ms-text-color-secondary);
 }
 
 li {
@@ -30,6 +36,7 @@ section:nth-child(even) .fg-divider:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2rem;
   padding: 2rem 0;
 }
 .fg-divider:before,
@@ -37,8 +44,16 @@ section:nth-child(even) .fg-divider:after {
   content: "";
   background-color: var(--ms-text-color-primary);
   width: 30%;
-  height: 2px;
+  height: 3px;
   margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fg-btn-primary {
+  background-color: var(--ms-bg-color-primary);
 }
 /*#endregion Utilities*****/
 
@@ -53,21 +68,30 @@ header h1 {
   font-weight: bold;
 }
 
-a {
+header a {
   color: var(--ms-text-color-primary);
-  text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
 }
 nav > a {
   padding: 0.5rem;
 }
 
-.fg-btn-header {
+.fg-btn-secondary {
   color: var(--ms-text-color-primary);
   border: 1px solid white;
 }
 /*#endregion Header*****/
+
+/*#region MAIN*****/
+.download::before {
+  content: "\F30A";
+  margin-right: 0.2rem;
+}
+
+#form > form > div {
+  margin-top: 2.5rem
+}
+/*#endregion MAIN*****/
 
 /*#region FOOTER*****/
 footer {
@@ -79,4 +103,19 @@ footer {
   background-color: var(--ms-bg-color-tertiary);
 }
 
+.fg-around a::before {
+  color: white;
+  border-radius: 50%;
+  border: 1px solid var(--ms-text-color-primary);
+  text-align: center;
+  padding: 10px;
+}
+.fg-around > div {
+  column-gap: 0.8rem;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--ms-bg-color-primary);
+}
 /*#endregion FOOTER*****/
