@@ -35,7 +35,14 @@ section:nth-child(odd) {
 }
 
 
-/*#region HERO*****/
-.hero-image {
+/*#region FOOTER*****/
+footer {
+    background-color: var(--ms-bg-color-secondary);
+    color: white;
 }
-/*#endregion HERO*****/
+
+.fg-upperFoot {
+    background-color: var(--ms-bg-color-tertiary);
+}
+
+/*#endregion FOOTER*****/
