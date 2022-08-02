@@ -5,22 +5,11 @@
   --ms-text-color-primary: white;
   --ms-text-color-secondary: #2b2b2b;
 }
-
-ul {
-  list-style: none;
-  padding-inline-start: 0;
+a {
+  text-decoration: none;
 }
 
-input, textarea {
-    border: none;
-    border-bottom: 1px solid var(--ms-text-color-secondary);
-}
-
-li {
-  display: inline-block;
-  margin: 0 0.2rem;
-}
-
+/*#region set background and divider*****/
 section:nth-child(odd) {
   background-color: var(--ms-bg-color-primary);
   color: var(--ms-text-color-primary);
@@ -31,7 +20,6 @@ section:nth-child(even) .fg-divider:after {
   background-color: var(--ms-text-color-secondary);
 }
 
-/*#region Utilities*****/
 .fg-divider {
   display: flex;
   align-items: center;
@@ -39,25 +27,24 @@ section:nth-child(even) .fg-divider:after {
   font-size: 2rem;
   padding: 2rem 0;
 }
+
 .fg-divider:before,
 .fg-divider:after {
   content: "";
   background-color: var(--ms-text-color-primary);
-  width: 30%;
+  width: 200px;
   height: 3px;
   margin: 0 1rem;
 }
+/*#endregion set background and divider*****/
 
-a {
-  text-decoration: none;
-}
+/*#region Utilities*****/
 
 .fg-btn-primary {
   background-color: var(--ms-bg-color-primary);
-  color:var(--ms-text-color-primary);
+  color: var(--ms-text-color-primary);
   border-color: var(--ms-bg-color-primary);
 }
-
 
 .fg-btn-secondary {
   border-color: var(--ms-text-color-primary);
@@ -69,30 +56,25 @@ a {
 header {
   background-color: var(--ms-bg-color-secondary);
   color: var(--ms-text-color-primary);
-  padding: 1rem;
-}
-
-header h1 {
-  font-weight: bold;
 }
 
 header a {
   color: var(--ms-text-color-primary);
   text-transform: uppercase;
-}
-nav > a {
   padding: 0.5rem;
+  font-weight: bold;
 }
+header li {
+  margin:1rem 0;
+}
+
+
+
 /*#endregion Header*****/
 
 /*#region MAIN*****/
-.download::before {
-  content: "\F30A";
-  margin-right: 0.2rem;
-}
-
-#form > form > div {
-  margin-top: 2.5rem
+#contact > div {
+  margin-top: 2.5rem;
 }
 /*#endregion MAIN*****/
 
@@ -113,6 +95,7 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
 .fg-around > div {
   column-gap: 0.8rem;
   justify-content: center;
