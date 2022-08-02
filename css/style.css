@@ -54,6 +54,14 @@ a {
 
 .fg-btn-primary {
   background-color: var(--ms-bg-color-primary);
+  color:var(--ms-text-color-primary);
+  border-color: var(--ms-bg-color-primary);
+}
+
+
+.fg-btn-secondary {
+  border-color: var(--ms-text-color-primary);
+  color: var(--ms-text-color-primary);
 }
 /*#endregion Utilities*****/
 
@@ -74,11 +82,6 @@ header a {
 }
 nav > a {
   padding: 0.5rem;
-}
-
-.fg-btn-secondary {
-  color: var(--ms-text-color-primary);
-  border: 1px solid white;
 }
 /*#endregion Header*****/
 
